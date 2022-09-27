@@ -62,7 +62,7 @@ const T& Conjunto<T>::minimo() const {
 template <class T>
 const T& Conjunto<T>::maximo() const {
     Nodo* n = this->_raiz;
-    while (n->izq != nullptr) {
+    while (n->der != nullptr) {
         n = n->der;
     }
     return n->valor;
